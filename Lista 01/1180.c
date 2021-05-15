@@ -12,21 +12,26 @@ A primeira linha apresenta a mensagem “Menor valor:” seguida de um espaço e
 
 int main(){
 
-    int N,i,menor,p=0;
+    int N;
     scanf("%d", &N);
     int X[N];
-    for(i=0;i<N;i++){
-        scanf("%d",&X[i]);
-    }
-    menor=X[0];
+    int i;
+    int menor,p;
+
+    scanf("%d", &X[0]);
+    menor= X[0];
+    p=0;
+
     for(i=1;i<N;i++){
+        scanf("%d", &X[i]);
         if(X[i]<menor){
-            menor=X[i];
+            menor = X[i];
             p=i;
         }
     }
     
-    printf("Menor valor: %d\nPosicao: %d", menor,p);
+    printf("Menor valor: %d\n", menor);
+    printf("Posicao: %d\n", p);
 
     return 0;
 }
