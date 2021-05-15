@@ -14,10 +14,8 @@ int main(){
 
     int N;
     scanf("%d", &N);
-    int X[N];
-    int i;
-    int menor,p;
-
+    int X[N],i,menor,p;
+    
     scanf("%d", &X[0]);
     menor= X[0];
     p=0;

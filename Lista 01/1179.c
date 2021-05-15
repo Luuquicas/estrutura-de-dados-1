@@ -5,37 +5,34 @@ Neste problema você deverá ler 15 valores colocá-los em 2 vetores conforme es
 */
 
 int main(){
-    int impar[5], par[5];
-    int qp = 0, qi = 0;
-    int x;
-    int i, j;
-
+    int i,j,impar[5], par[5],pa=0,im=0,x;
+    
     for(i=0;i<15;i++){
         scanf("%d", &x);
         if(x%2 == 0){
-            par[qp]=x;
-            qp++;
-            if(qp == 5){
+            par[pa]=x;
+            pa++;
+            if(pa == 5){
                 for(j=0;j<5;j++){
                     printf("par[%d] = %d\n", j, par[j]);
                 }
-                qp=0;
+                pa=0;
             }
         }else{
-            impar[qi]=x;
-            qi++;
-            if(qi == 5){
+            impar[im]=x;
+            im++;
+            if(im == 5){
                 for(j=0;j<5;j++){
                     printf("impar[%d] = %d\n", j, impar[j]);
                 }
-                qi=0;
+                im=0;
             }
         }
     }
-    for(j=0;j<qi;j++){
+    for(j=0;j<im;j++){
         printf("impar[%d] = %d\n", j, impar[j]);
     }
-    for(j=0;j<qp;j++){
+    for(j=0;j<pa;j++){
         printf("par[%d] = %d\n", j, par[j]);
     }
 

@@ -1,6 +1,4 @@
 #include <stdio.h>
-#define TAM 12
-
 /*
 Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. Em seguida, calcule e mostre a soma ou a média considerando somente aqueles elementos que estão abaixo da diagonal principal da matriz, conforme ilustrado abaixo (área verde).
 Entrada
@@ -12,14 +10,14 @@ Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto deci
 int main(){
     int i,j;
     char t;
-    double m[TAM][TAM], a = 0;
+    double m[12][12], a = 0;
     scanf("%c",&t);
-    for(i=0;i<TAM;i++){
-        for(j=0;j<TAM;j++){
+    for(i=0;i<12;i++){
+        for(j=0;j<12;j++){
             scanf("%lf", &m[i][j]);
         }
     }
-    for(i=1;i<TAM;i++){
+    for(i=1;i<12;i++){
         for(j=0;j<i;j++){
             a += m[i][j];
         }
