@@ -17,7 +17,7 @@ void ordemCrescente(int vetor[], int n){
 
 int main(){
 
-    int vetor[10] = {6 , 4 , 1 , 9 , 8 , 0 , 5 , 7 , 3 , 2};
+    int vetor[10] = {10 , 24 , 20 , 16 , 22 , 9 , 11 , 15 , 21 , 30};
     int i;
 
     ordemCrescente(vetor, 10);
